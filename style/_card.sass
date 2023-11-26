@@ -1,7 +1,5 @@
-$layout-breakpoint-small: 576px
-$layout-breakpoint-medium: 768px
-$layout-breakpoint-large: 992px
-
+@import layout
+@import variable
 
 .card
     display: flex
@@ -10,14 +8,14 @@ $layout-breakpoint-large: 992px
     width: 90%
     margin-bottom: 20px
     padding: 20px 10px
-    background-color: #fff
+    background-color: $white
     border-radius: 10px
     font-size: 18px
-    color: #6D708D
+    color: $grayish-blue
 
     @media screen and (min-width: $layout-breakpoint-small) and (max-width: $layout-breakpoint-medium)
         width: 60%
-    
+
     @media screen and (min-width: $layout-breakpoint-medium)
         width: 33%
 
@@ -28,7 +26,6 @@ $layout-breakpoint-large: 992px
 
         &_yearly
             display: none
-
 
     &__feature-list
         padding: 0
@@ -45,7 +42,7 @@ $layout-breakpoint-large: 992px
             margin-bottom: 20px
 
         &.cross
-            color: #999
+            color: $grey
 
         .fa-regular
             margin-right: 5px
@@ -56,13 +53,13 @@ $layout-breakpoint-large: 992px
         padding: 10px
         border: 1px solid transparent
         border-radius: 10px
-        background: linear-gradient(#6D708D, #3A3D73)
-        color: #fff
+        background: linear-gradient($grayish-blue, $dark-blue)
+        color: $white
         text-align: center
         text-decoration: none
 
         &:hover
-            background: linear-gradient(#696FDD, #3A3D73)
+            background: linear-gradient($soft-blue, $dark-blue)
 
         &:hover, &:focus
             animation: pulse 1s
@@ -70,20 +67,20 @@ $layout-breakpoint-large: 992px
 
         @keyframes pulse
             0%
-                box-shadow: 0 0 0 0 #6D708D
+                box-shadow: 0 0 0 0 $grayish-blue
 
     &.promo
-        background: linear-gradient(#696FDD, #3A3D73)
-        color: #fff
+        background: linear-gradient($soft-blue, $dark-blue)
+        color: $white
 
         @media screen and (min-width: $layout-breakpoint-medium)
             padding: 40px 30px
 
-        .card__price 
-            color: #fff
+        .card__price
+            color: $white
             @media screen and (min-width: $layout-breakpoint-medium) and (max-width: $layout-breakpoint-large)
                 font-size: 27px
 
         .card__signup
-            background: #fff
+            background: $white
             color: #494C5F

@@ -16,10 +16,10 @@
   height: 0;
 }
 .switch__input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #696fdd;
 }
 .switch__input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #696fdd;
 }
 .switch__input:checked + .slider:before {
   transform: translateX(26px);
@@ -58,7 +58,7 @@
   background-color: #fff;
   border-radius: 10px;
   font-size: 18px;
-  color: #6D708D;
+  color: #6d708d;
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .card {
@@ -107,13 +107,13 @@
   padding: 10px;
   border: 1px solid transparent;
   border-radius: 10px;
-  background: linear-gradient(#6D708D, #3A3D73);
+  background: linear-gradient(#6d708d, #3a3d73);
   color: #fff;
   text-align: center;
   text-decoration: none;
 }
 .card__signup:hover {
-  background: linear-gradient(#696FDD, #3A3D73);
+  background: linear-gradient(#696fdd, #3a3d73);
 }
 .card__signup:hover, .card__signup:focus {
   animation: pulse 1s;
@@ -121,11 +121,11 @@
 }
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 #6D708D;
+    box-shadow: 0 0 0 0 #6d708d;
   }
 }
 .card.promo {
-  background: linear-gradient(#696FDD, #3A3D73);
+  background: linear-gradient(#696fdd, #3a3d73);
   color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -165,7 +165,7 @@ body {
 }
 .comparison__header {
   font-size: 32px;
-  color: #6D708D;
+  color: #6d708d;
   text-align: center;
 }
 .comparison__toggle {
