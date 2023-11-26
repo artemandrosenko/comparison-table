@@ -75,6 +75,9 @@
   font-size: 32px;
   color: #494C5F;
 }
+.card__price_yearly {
+  display: none;
+}
 .card__feature-list {
   padding: 0;
   list-style: none;
