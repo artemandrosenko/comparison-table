@@ -19,6 +19,13 @@
     @media screen and (min-width: $layout-breakpoint-medium)
         width: 33%
 
+    &__label
+        position: absolute
+        top: -25px
+        padding: 10px
+        background-color: #e3b3f9
+        border-radius: 7px
+
     &__price
         margin-bottom: 20px
         font-size: 32px
@@ -70,6 +77,7 @@
                 box-shadow: 0 0 0 0 $grayish-blue
 
     &.promo
+        position: relative
         background: linear-gradient($soft-blue, $dark-blue)
         color: $white
 
