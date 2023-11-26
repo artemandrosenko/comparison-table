@@ -1,0 +1,53 @@
+.card
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px 10px
+    background-color: #fff
+    border-radius: 10px
+    font-size: 18px
+    color: #6D708D
+
+    &__price
+        margin-bottom: 20px
+        font-size: 32px
+        color: #494C5F
+
+    &__feature-list
+        padding: 0
+        list-style: none
+
+    &__feature-item
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 20px
+
+        &.cross 
+            color: #999
+
+        .fa-regular
+            margin-right: 5px
+    
+    &__signup
+        display: block
+        width: 60%
+        padding: 10px
+        border: 1px solid transparent
+        border-radius: 10px
+        background: linear-gradient(#6D708D, #3A3D73)
+        color: #fff
+        text-align: center
+        text-decoration: none
+
+        &:hover
+            background: linear-gradient(#696FDD, #3A3D73)
+
+        &:hover, &:focus
+            animation: pulse 1s
+            box-shadow: 0 0 0 2em transparent
+
+        @keyframes pulse 
+            0%
+                box-shadow: 0 0 0 0 #6D708D

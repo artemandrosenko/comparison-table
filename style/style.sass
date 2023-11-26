@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
 @import toggle
+@import card
 
 body
     margin: 0
+    padding: 0
     box-sizing: border-box
+    background-color: #F6F6FE
+    font-family: 'Montserrat', sans-serif
 
 .main
     margin: 10px
@@ -13,6 +18,8 @@ body
     justify-content: center
 
     &__header
+        font-size: 32px
+        color: #6D708D
         text-align: center
 
     &__toggle
@@ -20,54 +27,8 @@ body
         justify-content: center
         align-items: center
 
-// .toggle
-//     &__title
-//         margin: 10px
-
-// /* The switch - the box around the slider
-// .switch
-//     position: relative
-//     display: inline-block
-//     width: 60px
-//     height: 34px
-
-//     &__input
-//         opacity: 0
-//         width: 0
-//         height: 0
-
-//         &:checked + .slider
-//             background-color: #2196F3
-
-//         &:focus + .slider
-//             box-shadow: 0 0 1px #2196F3
-
-//         &:checked + .slider:before
-//             -webkit-transform: translateX(26px)
-//             -ms-transform: translateX(26px)
-//             transform: translateX(26px)
-
-// .slider
-//     position: absolute
-//     cursor: pointer
-//     top: 0
-//     left: 0
-//     right: 0
-//     bottom: 0
-//     background-color: #ccc
-//     border-radius: 34px
-//     -webkit-transition: .4s
-//     transition: .4s
-
-//     &:before
-//         position: absolute
-//         content: ""
-//         height: 26px
-//         width: 26px
-//         left: 4px
-//         bottom: 4px
-//         background-color: white
-//         border-radius: 50%
-//         -webkit-transition: .4s
-//         transition: .4s
+    &__cards-container
+        display: flex
+        flex-direction: column
+        margin: 30px 0
 
